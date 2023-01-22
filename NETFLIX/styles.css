@@ -1,0 +1,410 @@
+ *{   /* all default values of margins and padding set as 0 */
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #000;
+    color:#fff;
+}
+
+
+ .header{  /*contains background-image*/
+
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{     /*Customizing Netflix Logo*/
+
+    width:110px;
+    cursor: pointer;
+
+
+}
+
+nav button{ /*Customizing two buttons*/
+    border:0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding:7px 20px;
+    font-size: 12px;
+    border-radius: 1.9px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+.language-btn:hover {
+    background-color: #473C33;
+    color:rgb(253, 243, 243);
+  }
+
+  .signin-btn:hover{
+    background-color: #c73232;
+    color: white;
+
+  }
+
+    .language-btn{  /*customizing the English Button*/
+
+    display:inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+}
+.language-btn img{   /*customizing the arrow inside the English button*/
+    width: 10px;
+    margin-left:5px;
+}
+
+.header-content{  /*customizing the header contents which is email typing bar ,h1,h2and p tag contents, adjusting the position of the header content also*/
+
+     position:absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     margin-top: 100px;
+}
+
+.header-content h1{ /*customizing the text inside the h1 tag*/
+
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 590;
+    max-width: 650px;
+    margin-bottom: 20px;
+
+
+}
+
+.header-content h3{ /*customizing the text inside the h3 tag*/
+    font-weight: 440;
+    font-size:20px ;
+    margin-bottom: 19px;
+}
+
+.header-content p{  /*customizing the paragraph inside the header container*/
+
+    margin-top: 5px;
+
+}
+
+.email-signup{ /*customizing the email typing bar*/
+
+    background: #fff;
+    border-radius: 2px;  /*changing the border radius of the email bar*/
+    display:flex;
+    width: 50px
+    align-items: center;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+ .email-signup input{ /*alligning the "get started" button to the right side of the email bar */
+
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+
+.email-signup button{   /*customising and coloring the red "Get started" button and increasing the height of the email bar */
+
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 14px 39px;
+
+
+
+}
+
+.email-signup button:hover{
+    background-color:#c73232;
+    /* color:#c73232; */
+
+  }
+
+/* -----------features----------- */
+
+
+.features h2{  /*customizing the text in h2 tags  */
+
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+
+}
+
+.features p{  /*customizing the text in p tags  */
+
+
+    font-size: 22px;
+    margin-bottom:100px ;
+    margin-left: 101px;
+    font-weight: 250px;
+    padding: inherit;  /*adusting the length between h2 and p  */
+
+}
+
+.row{  /*customising the row containing text and images */
+
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0;
+    margin: px;
+    margin-bottom: 5px;
+}
+
+.text-col{  /*customizing the text container */
+    flex-basis: 50%;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.img-col{ /*customizing the image container */
+    flex-basis: 50%;
+    margin-top: 1px;
+
+
+}
+
+.img-col img{  /*customizing the image inside the image container */
+    /* display: block; */
+    flex-basis:60% ;
+    width: 79%;
+    margin-right: 40px;
+    margin-left: 60px;
+    /* margin-bottom: 190px; */
+}
+
+
+/* ---------faq--------- */
+
+.faq{
+
+    padding: 10px 12%;  /* customizing the text before second email form */
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+
+    font-weight: 500;
+    font-size: 40px;
+
+
+}
+
+.accordion{  /* creating the gray box containg faq questions and inside answers and then customizing its size and removing bullets  */
+
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.accordion li label{
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+
+label::after{
+
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+
+}
+
+ input[type="radio"]{
+
+    display: none;
+}
+
+.accordion .content{
+
+      background: #303030;
+      text-align: left;
+      padding: 0 20px;
+      max-height:0 ;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding:30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+
+   transform: rotate(135deg);
+
+
+}
+
+.faq .email-signup{
+
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+
+    font-size: 13px;
+}
+
+
+/*---------footer--------*/
+
+.footer{
+
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+
+.footer h2{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+
+    display: block;
+    text-decoration: none;
+    color:rgb(109, 107, 107);
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+
+    align-items: flex-start;
+    padding:10px 0;
+}
+
+.footer .language-btn{
+
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-txt{
+
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#zero-hr {
+    background-color: #303030;
+    height: 6px;
+    border: #303030;
+    margin-bottom:5zpx ;
+
+}
+
+
+#first-hr {
+    background-color: #303030;
+    height: 6px;
+    border: #303030;
+    margin-bottom:5px ;
+
+}
+
+
+#second-hr {
+    background-color: #303030;
+    height: 6px;
+    border: #303030;
+    margin-bottom:1px ;
+
+}
+
+#third-hr{
+
+    background-color: #303030;
+    height: 6px;
+    border: #303030;
+    margin-bottom:1px ;
+
+
+}
+
+#fourth-hr{
+    background-color: #303030;
+    height: 6px;
+    border: #303030;
+    margin-bottom:1px ;
+
+
+}
+
+.name-tag{
+     text-align: right ;
+    flex-basis: 50%;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    color:rgb(109, 107, 107);
+    font-size: 11px;
+    margin-bottom: 10px
+
+
+}
